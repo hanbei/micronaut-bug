@@ -2,8 +2,6 @@
 micronaut:
     application:
         name: bug
-    server:
-      port: 8888
 
 ---
 consul:

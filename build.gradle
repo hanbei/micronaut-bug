@@ -44,7 +44,7 @@ shadowJar {
     mergeServiceFiles()
 }
 
-run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
+run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dmicronaut.environments=k8s')
 
 mainClassName = "bug.Application"
 tasks.withType(JavaCompile){
